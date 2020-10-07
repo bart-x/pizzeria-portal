@@ -1,14 +1,16 @@
 import React from 'react';
+import styles from './PageNav.module.scss';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 const PageNav = (props) => (
   <nav>
-    <NavLink exact to={`${process.env.PUBLIC_URL}/`} active className='active'>Home</NavLink>
-    <NavLink to={`${process.env.PUBLIC_URL}/login`} active className='active'>Login</NavLink>
-    <NavLink to={`${process.env.PUBLIC_URL}/tables`} active className='active'>Tables</NavLink>
-    <NavLink to={`${process.env.PUBLIC_URL}/waiter`} active className='active'>Waiter</NavLink>
-    <NavLink to={`${process.env.PUBLIC_URL}/kitchen`} active className='active'>Kitchen</NavLink>
+    <Button className={styles.link} component={NavLink} exact to={`${process.env.PUBLIC_URL}/`} activeclassName='active'>Home</Button>
+    <Button className={styles.link} component={NavLink} to={`${process.env.PUBLIC_URL}/login`} activeclassName='active'>Login</Button>
+    <Button className={styles.link} component={NavLink} to={`${process.env.PUBLIC_URL}/tables`} activeclassName='active'>Tables</Button>
+    <Button className={styles.link} component={NavLink} to={`${process.env.PUBLIC_URL}/waiter`} activeclassName='active'>Waiter</Button>
+    <Button className={styles.link} component={NavLink} to={`${process.env.PUBLIC_URL}/kitchen`} activeclassName='active'>Kitchen</Button>
   </nav>
 );
 
