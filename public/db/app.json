@@ -222,7 +222,10 @@
       "repeat": "daily",
       "duration": 2,
       "ppl": 3,
-      "starters": ["bread", "lemonWater"]
+      "starters": [
+        "bread",
+        "lemonWater"
+      ]
     },
     {
       "id": 3,
@@ -232,7 +235,10 @@
       "repeat": "daily",
       "duration": 2,
       "ppl": 3,
-      "starters": ["bread", "lemonWater"]
+      "starters": [
+        "bread",
+        "lemonWater"
+      ]
     },
     {
       "id": 4,
@@ -252,8 +258,54 @@
       "repeat": "daily",
       "duration": 2,
       "ppl": 3,
-      "starters": ["lemonWater"]
+      "starters": [
+        "lemonWater"
+      ]
     }
   ],
-  "booking": []
+  "booking": [
+    {
+      "id": 1,
+      "date": "2020-01-29",
+      "hour": "16:00",
+      "table": 1,
+      "duration": 2,
+      "ppl": 3,
+      "starters": [
+        "lemonWater"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": 1,
+      "status": "free",
+      "order": null
+    },
+    {
+      "id": 2,
+      "status": "thinking",
+      "order": null
+    },
+    {
+      "id": 3,
+      "status": "ordered",
+      "order": 123
+    },
+    {
+      "id": 4,
+      "status": "prepared",
+      "order": 234
+    },
+    {
+      "id": 5,
+      "status": "delivered",
+      "order": 345
+    },
+    {
+      "id": 6,
+      "status": "paid",
+      "order": 456
+    }
+  ]
 }
